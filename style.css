@@ -1,35 +1,45 @@
 body{
-    font-family: monospace;
+    font-family: sans-serif;
   }
+  
   header{
     background-color: rgb(184, 231, 249);
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
   }
   label{
     font-size: 30px;
+    margin-left:30px;
   }
   /* change fonts and sizes */
   select{
-    font-family: monospace;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
   }
   input{
-    font-family: monospace;
+    font-family: sans-serif;
     font-size: 20px;
   }
   button{
     background-color: rgb(184, 231, 249);
     padding: 10px;
-    font-family: monospace;
+    font-family: sans-serif;
+    font-size: 20px;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
+    margin-left: 160px;
   }
   .outputBox{
     padding: 10px;
     min-height: 160px;
-    width: 60%;
-    outline-color: rgb(184, 231, 249);
+    width: 40%;
+     outline-color: rgb(184, 231, 249);
     outline-style: solid;
+    float: right;
+    margin-top: -150px;
+    margin-right: 40px;
+  
+    /*margin-left:400px; */
   }
   
