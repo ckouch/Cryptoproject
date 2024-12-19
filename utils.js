@@ -1,3 +1,4 @@
+// this is helping link the gethub to our webpage
 
 function getColumn(url, columnNumber){
     var column = [];

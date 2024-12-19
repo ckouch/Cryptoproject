@@ -7,33 +7,31 @@
 	<title>replit</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
+<center>
 <body>
+  <!-- this is the header -->
 	<header>
 		<h1>Historical Crypto Prices</h1>
 		<p>Find how much crypto cost in the past!</p>
 	</header>
-
+</center>
+<!-- this is one of 2 div's -->
   <div>
-	
+	<!-- this is a dropdown input -->
 		<label>Crypto: </label>
     <select id="Crypto">
-      <option value="bla">Choose Crypto</option>
+      <option value="0">Choose Crypto</option>
       <option value="Bitcoin">Bitcoin</option>
-      <option value="Ethereum">Etherum</option>
-      <option value="Dodgecoin">Dodgecoin</option>
+      <option value="Ethereum">Ethereum</option>
+      <option value="Dogecoin">Dogecoin</option>
      
     </select>
-
-    <button onclick="getPrice(document.getElementById('Crypto').value, document.getElementById('Year').value, document.getElementById('Month').value, document.getElementById('Day').value)">Find price</button>
     <br>
     <br>
+    <!-- this is a dropdown input -->
 	<label>Year: </label>
     <select id="Year">
-      <option value="bla">Choose Year</option>
-      <option value="2013.0">2013</option>
-      <option value="2014.0">2014</option>
-      <option value="2015.0">2015</option>
+      <option value="0">Choose Year</option>
       <option value="2016.0">2016</option>
       <option value="2017.0">2017</option>
       <option value="2018.0">2018</option>
@@ -47,6 +45,7 @@
     <br>
     <br>
 	<label>Month: </label>
+  <!-- this is a dropdown input -->
     <select id="Month">
       <option value="0">Choose Month</option>
       <option value="1.0">January</option>
@@ -65,25 +64,25 @@
     </select>
     <br>
     <br>
-
+<!-- this is a dropdown input that is made in js -->
 	<label>Day: </label>
     <select id="Day">
-      <option value="crazy">Choose Day</option>
+      <option value="0">Choose Day</option>
 
     </select>
     </div>
     <br>
     <br>
-
-    <div class="outputBox"></div>
-      <h2></h2>
-      <!-- add crypto images? -->
-  	  <!-- <img width="20%"src="qr.png">
-		  <p id="output"> </p> -->
-
-	  </div>
+<!-- this is the output box -->
+    <div class="outputBox" id="outputBox">
+      <p id="output"></p>
+    </div>
+      <!-- this is the button thayt calls the function and defines the perameters -->
+      <button onclick="getPrice(document.getElementById('Crypto').value, document.getElementById('Year').value, document.getElementById('Month').value, document.getElementById('Day').value)">Find price</button>
+    </div>
 
   </center>
+  <!-- this links the html to the js -->
   <script src="utils.js"></script>
     <script src="script.js"></script>
   </body>
